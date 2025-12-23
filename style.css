@@ -1,19 +1,18 @@
 /* CORE THEME */
-
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 :root {
   /* Fonts */
   --default-font: "Plus Jakarta Sans", system-ui, sans-serif;
   --heading-font: "Plus Jakarta Sans", system-ui, sans-serif;
   --nav-font: "Plus Jakarta Sans", system-ui, sans-serif;
+}
 
-}
 /* sizes*/
-:root{
---navbar-height:67px;
+:root {
+  --navbar-height:67px;
 }
+
 :root {
   --theme-color: #41EAD4;
   --accent-color: #011627;
@@ -59,25 +58,13 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-// Grid breakpoints
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1440px
-) !default;
 
 /* CORE THEME End*/
-
-// theme classes definations
-.theme-btn{
-    background-color:var(--theme-color);
-    color:black;
+.theme-btn {
+  background-color: var(--theme-color);
+  color: black;
 }
 
-// preloader
 #preloader {
   position: fixed;
   inset: 0;
@@ -85,7 +72,8 @@ $grid-breakpoints: (
   overflow: hidden;
   background: var(--background-color);
   transition: all 0.6s ease-out;
-  &:before {
+}
+#preloader:before {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
@@ -97,64 +85,42 @@ $grid-breakpoints: (
   height: 60px;
   animation: animate-preloader 1.5s linear infinite;
 }
-}
+
 @keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
-
-// Navbar
-.navbar{
-    .navbar-brand{
-        img{
-            height:50px;
-            width:50px;
-
-        }
-    }
-}
-// hero
-.hero-section{
-    margin-top:calc(var(--navbar-height) + 10px);
-    .hero-heading{
-        font-size:3rem;
-        
-    }
+.navbar .navbar-brand img {
+  height: 50px;
+  width: 50px;
 }
 
-
-@media screen and (min-width:map-get($grid-breakpoints,'sm')){
-    .navbar .navbar-brand{
-        img{
-            width:65px;
-            height: 65px;
-        }
-    }
-    .hero-section{
-        .hero-heading{
-            font-size:4rem;
-            
-        }
-        }
+.hero-section {
+  margin-top: calc(var(--navbar-height) + 10px);
+}
+.hero-section .hero-heading {
+  font-size: 3rem;
 }
 
-@media screen and (min-width:map-get($grid-breakpoints,'md')){
-    .navbar .navbar-brand{
-        img{
-            width:75px;
-            height: 75px;
-        }
-    }
-    .hero-section{
-        .hero-heading{
-            font-size:4rem;
-        
-        }
-        }
+@media screen and (min-width: 576px) {
+  .navbar .navbar-brand img {
+    width: 65px;
+    height: 65px;
+  }
+  .hero-section .hero-heading {
+    font-size: 4rem;
+  }
 }
-
+@media screen and (min-width: 768px) {
+  .navbar .navbar-brand img {
+    width: 75px;
+    height: 75px;
+  }
+  .hero-section .hero-heading {
+    font-size: 4rem;
+  }
+}/*# sourceMappingURL=style.css.map */
