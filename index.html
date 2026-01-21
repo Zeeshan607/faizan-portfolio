@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header class=" ">
-    <nav class="navbar navbar-expand-md py-0  fixed-top  bg-light">
-        <div class="container-fluid mt-2  mx-2 border-gray border-top border-bottom">
+    
+   <header>
+    <nav class="navbar navbar-expand-md py-0  navbar-light fixed-top d-flex flex-row justify-content-center bg-light">
+        <div class="container-xl mt-2  mx-2 border-gray border-top border-bottom">
             <a class="navbar-brand py-0" href="#">
                 <img src="assets/img/LOGO.png" alt="logo here" width="80px" height="80px" class="img-fluid">
             </a>
@@ -39,13 +41,20 @@
    </header>
 <main>
     <!-- hero section -->
-     <div class="container-fluid hero-section">
-        <div class="row mx-0">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
-                <div class="d-flex flex-row w-100">
-                    <h1 class="h1 fw-bolder hero-heading">Muhammad Faizan</h1>
+     <div class="container-xl hero-section">
+        <div class="row mx-0 d-flex flex-sm-row-reverse   ">
+             <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column align-items-center">
+                    <div class="hero-img">
+                        <figure>
+                            <img src="assets/img/hero-img.png" class="img-fluid" width="700px" height="100%" alt="Muhammad-Faizan">
+                        </figure>
+                    </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column ">
+                <div class="d-flex flex-row justify-content-center justify-content-md-start w-100 hero-heading">
+                    <h1 class="h1 fw-bolder ">Muhammad Faizan</h1>
                 </div>
-                <div class="d-flex flex-row w-100 justify-content-center justify-content-sm-center  justify-content-md-start">
+                <div class="d-flex flex-row w-100 my-3 justify-content-center justify-content-sm-center  justify-content-md-start">
                     <button class="btn theme-btn">Hire Me</button>
                 </div>
                 <div class="d-flex flex-row w-100 mt-3">
@@ -54,14 +63,38 @@
                     There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain
                    </p>
                 </div>
+                <div class="social-links mt-4">
+                    <ul class="d-flex flex-row list-unstyled mb-0">
+                        <li>
+                            <a href="" class="border border-dark rounded-circle p-1"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="" class="border border-dark rounded-circle p-1"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a  href="" class="border border-dark rounded-circle p-1"><i class="fab fa-upwork"></i></a>
+                        </li>
+                        <li>
+                            <a  href="" class="border border-dark rounded-circle p-1"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row mx-0 yt-stats-row-wrap">
+                    <div class="row mx-0 yt-stats-row">
+                        <div class="col-6 yt-stat-1">
+                            <strong class="count"><b><sup>+</sup>2.06K</b></strong>
+                            <p>There is no one who loves pain itself, who seeks after it and wants to have it</p>
+                        </div>
+                        <div class="col-6 yt-stat-2">
+                            <strong class="count"><b><sup>+</sup>71.0K</b></strong>
+                            <p>There is no one who loves pain itself, who seeks after it and wants to have it</p>
+                    
+                        </div>
+                </div>
+                </div>
+               
             </div>
-            <div class="d-none d-md-flex  col-md-6 col-lg-6 d-flex flex-column align-items-center">
-                    <div class="hero-shape">
-                        <figure>
-                            <img src="assets/img/faizan-1.png" class="img-fluid" width="300px" height="100%" alt="Muhammad-Faizan">
-                        </figure>
-                    </div>
-            </div>
+           
         </div>
      </div>
     <!-- hero section end -->
@@ -74,8 +107,10 @@
 
 <!-- Preloader -->
 <div id="preloader"></div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="script.js"></script>
 </body>
 </html>
